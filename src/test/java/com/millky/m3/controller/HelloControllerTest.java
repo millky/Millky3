@@ -1,4 +1,4 @@
-package com.millky.m3.base.controller;
+package com.millky.m3.controller;
 
 import com.millky.m3.base.config.WebMvcConfig;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package com.millky.m3.base.controller;
+package com.millky.m3.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
