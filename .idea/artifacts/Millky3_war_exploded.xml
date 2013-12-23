@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" build-on-make="true" name="Millky3:war exploded">
-    <output-path>$PROJECT_DIR$/target/Millky2</output-path>
+    <output-path>$PROJECT_DIR$/target/Millky3</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="Millky3/web/Web" />
       <element id="directory" name="WEB-INF">

@@ -411,7 +411,7 @@
     </repositories>
 
     <build>
-        <finalName>Millky2</finalName>
+        <finalName>Millky3</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -446,7 +446,7 @@
                     <url>http://manage.millky.com/manager/text</url>
                     <username></username>
                     <password></password>
-                    <warFile>target/Millky2.war</warFile>
+                    <warFile>target/Millky3.war</warFile>
                 </configuration>
             </plugin>
             <plugin>

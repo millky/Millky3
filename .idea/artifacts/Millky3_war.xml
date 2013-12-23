@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" build-on-make="true" name="Millky3:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="Millky2.war">
+    <root id="archive" name="Millky3.war">
       <element id="artifact" artifact-name="Millky3:war exploded" />
     </root>
   </artifact>
