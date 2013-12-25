@@ -29,8 +29,8 @@
 <section id="baseFrame"></section>
 
 <ul class="content_links">
-    <li><a href="/t3">Content page 6</a></li>
-    <li><a href="/t4">Content page 7</a></li>
+    <li><a href="/t3">Content page 3</a></li>
+    <li><a href="/t4">Content page 4</a></li>
 </ul>
 <div id="content">
     <p>Content within this box is replaced with content from supporting pages using javascript and AJAX.
@@ -47,129 +47,21 @@
 <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
 <!--<![endif]-->
 
-
-<%--
-<script>
-   // alert("1");
-//    (function(window){
-
-
-//    $(window).on("popstate", function(e) {
-//        //handlePopstate(e);
-//        console.log('popstate fired!'+e);
-//    });
-
-    //if ("pushState" in history) {
-        //$(document).on("click", "a", function(evt){
-
-//    $('a').click(function (evt) {
-           // console.log(evt+'click fired!'+this.href);
-           // history.pushState(null, this.textContent, this.href);
-           // $('#content').load(this.href);
-           // return false;
-       // });​
-    //}
-//    })(window);
-
-   // (function(window){
-        $(window).on("popstate", function(e) {
-            //handlePopstate(e);
-            //console.log('popstate fired!'+e);
-            alert("5"+ e.state+document.location.pathname);
-            $('#content').load(document.location.pathname);
-        });
-   // })(window);
-
-
-  // if ("pushState" in history) {
-   $(document).on("click", "a", function(evt){
-
-    //$('a').click(function (evt) {
-        //alert("2"+evt);
-        alert("3"+this.href);
-        //alert("4"+history);
-        var url = $(this).attr('href');
-//       // console.log(evt+'click fired!'+this.href);
-//
-//        if (url) {
-//            if (url.indexOf('javascript:;') == 0) {
-//                return true;
-//            }
-
-       evt.preventDefault();
-            history.pushState(null, $(this).text(), url);
-           $('#content').load(url);
-//
-//        }
-    });
-  // }
-
-</script>
-
-
-
-<script src="//browserstate.github.io/history.js/scripts/bundled/html5/jquery.history.js"></script>
-
-<script>
-    (function (window) {
-
-        var History = window.History;
-
-        History.Adapter.bind(window, 'statechange', function () {
-            var State = History.getState();
-            $('#content').load(State.url);
-        });
-
-        $('a').click(function (evt) {
-            var url = $(this).attr('href');
-
-            if (url) {
-                if (url.indexOf('javascript:;') == 0) {
-                    return true;
-                }
-                evt.preventDefault();
-                History.pushState(null, $(this).text(), url);
-                $('#content').load(url);
-            }
-        });
-    })(window);
-</script>
-
---%>
-
-
-
 <script>
 
-    if ("pushState" in history) {
-
-//    (function(window){
-    $(window).on("popstate", function(e) {
-        //handlePopstate(e);
-        //console.log('popstate fired!'+e);
-        alert("5"+ e.state+document.location.pathname);
-//        var path = window.location.href.replace(window.location.origin,"");
+    $(window).on("popstate", function (e) {
 
         var path = document.location.pathname;
-        if(path == "/"){
-path = "/default/t1";
+        if (path == "/") {
+            path = "/default/t1";
         }
-        alert(path);
         $('#content').load(path);
     });
-    }
-//    })(window);
 
-//        history.Adapter.bind(window, 'statechange', function () {
-//            var State = history.getState();
-//            $('#content').load(State.url);
-//        });
     if ("pushState" in history) {
         $('a').click(function (evt) {
 
-           var url = $(this).attr('href');
-
-            alert("3"+this.href);
+            var url = $(this).attr('href');
 
             if (url) {
                 if (url.indexOf('javascript:;') == 0) {

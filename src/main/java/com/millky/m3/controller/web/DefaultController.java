@@ -21,6 +21,7 @@ public class DefaultController
 		return "basePage";
 	}
 
+
 	@RequestMapping("/default/**/*")
 	public void defaultRequest(Device device) throws IOException
 	{
