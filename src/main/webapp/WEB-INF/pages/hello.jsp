@@ -58,9 +58,6 @@
     (function(window){
 
         var History = window.History;
-        //var State = History.getState(true,true);
-
-//        History.log('initial:', State.data, State.title, State.url);
 
         History.Adapter.bind(window,'statechange',function(){
             var State = History.getState();
@@ -69,10 +66,192 @@
         });
 
             $('a').click(function(evt) {
-                evt.preventDefault();
-                History.pushState(null, $(this).text(), $(this).attr('href'));
-                $('#content').load($(this).attr('href'));
+        //$(document).on("click", "a", function(evt){
+                var url = $(this).attr('href');
+
+                if (url)
+                {
+                    if (url.indexOf('javascript:;') == 0)
+                    {
+                        return true;
+                    }
+
+
+
+                    evt.preventDefault();
+                    History.pushState(null, $(this).text(), url);
+                    $('#content').load(url);
+                }
             });
+
+
+//        $(document).on("click", "a", function(e)
+//        {
+//            var url = $(this).attr('href');
+//            // preUrl = window.location.hash;
+//            // alert(1 +" "+ uriEncode(window.location.hash));
+//
+//            document.cookie = "preUrl=" + uriEncode(window.location.hash) + "; expires=-1; path=/";
+//
+//            if (url)
+//            {
+//                if (url.indexOf('javascript:;') == 0)
+//                {
+//                    return true;
+//                }
+//
+//                if (url.indexOf('#') == 0)
+//                {
+//                    // http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
+//                    e.preventDefault();
+//                    $('#baseLoading').css('filter', 'alpha(opacity=90)').fadeIn('fast');
+//                    var target = this.hash, $target = $(target);
+//                    if ($target.offset() == undefined)
+//                    {
+//                        $target = $('#baseFrame');
+//                    }
+//
+//                    $('html, body').stop().animate({
+//                        'scrollTop' : $target.offset().top - 50
+//                    }, 500, 'swing', function()
+//                    {
+//                        $('#baseLoading').fadeOut('slow');
+//                    });
+//                    return false;
+//                }
+//
+//                var onclickEvent = $(this).prop('onclick'); // 없으면 null반환
+//                var relTarget = $(this).prop('target'); // 없으면 ''반환
+//                $('#baseLoading').css('filter', 'alpha(opacity=70)').fadeIn();
+//                // 물음표(?)로 시작하는것이 있으면 지금 주소에다가 뒤의것을 붙여준다.
+//                if (url.indexOf('?') == 0)
+//                {
+//                    var hash = window.location.hash.replace(/^#/, '');
+//                    var hashIdx = hash.indexOf('?');
+//                    if (hashIdx > -1)
+//                    {
+//                        // 이전에 이미 다른 파라미터가 있을경우 병합 해 줘야 한다.
+//                        var hashUrl = hash.substring(0, hashIdx);
+//                        var hashQuery = hash.substring(hashIdx + 1);
+//
+//                        var urlQuery = url.substring(1);
+//                        var queryString = (hashQuery + "&" + urlQuery).split("&");
+//
+//                        var queryMap = new Object();
+//                        for (var iParam = 0; iParam < queryString.length; iParam++)
+//                        {
+//                            var aParam = queryString[iParam].split("=");
+//                            queryMap[aParam[0]] = aParam[1];
+//                        }
+//
+//                        var newQueryString = "";
+//
+//                        for ( var prop in queryMap)
+//                        {
+//                            newQueryString = newQueryString + "&" + prop + "=" + queryMap[prop];
+//                        }
+//
+//                        newQueryString = newQueryString.substring(1);
+//
+//                        $.history.load(hashUrl + "?" + newQueryString, false);
+//                    } else
+//                    {
+//                        $.history.load(hash + url, false);
+//                    }
+//
+//                    if (url.indexOf('language=') >= 0)
+//                    {
+//                        setTimeout("$.post('/base/global/footer', {}, function(data) { $('#footerFrame').html(data); });", 1000);
+//                        setTimeout("$.post('/base/global/navigation', {}, function(data) { $('#headerFrame').html(data); });", 2000);
+//                    }
+//
+//                    return false;
+//                }
+//                // 로컬 호스트와 같으면 잘라버리는건 어떨까?
+//                // 시작 URL이 7 이하면? 그것은!!! 내부것!!!
+//                if (browser.msie && (browser.version < 8 || document.documentMode < 8))
+//                {
+//                    if (url.indexOf(window.location.host) > 5)
+//                    {
+//                        url = url.replace('http://', '');
+//
+//                        var i = 0;
+//                        if (url.indexOf('#') > -1)
+//                        {
+//                            i = 1;
+//                        }
+//
+//                        url = url.substring((url.indexOf('/')) + i, url.length);
+//                    }
+//                }
+//                if (url.indexOf('://') > 2 && url.indexOf('://') < 10)
+//                {
+//                    window.open(url);
+//                    $('#baseLoading').fadeOut('slow');
+//                    return false;
+//                }
+//                if (onclickEvent == null && relTarget == '')
+//                {
+//                    // Google Analytics
+//                    // millky, myhome등 전면 화면 이동시
+//                    _gaq.push([ '_trackPageview', url ]);
+//
+//                    $.history.load(url, false);
+//                    $('html, body').animate({
+//                        scrollTop : 0
+//                    }, 333);
+//                    return false;
+//                }
+//
+//                if (onclickEvent == null && relTarget != '')
+//                {
+//                    if (relTarget == '_brank')
+//                    {
+//                        window.open(url);
+//                        $('#baseLoading').fadeOut('slow');
+//                        return false;
+//                    }
+//
+//                    if (relTarget == '_self' || relTarget == '_parent' || relTarget == '_top')
+//                    {
+//                        location.href = url;
+//                        return false;
+//                    }
+//
+//                    if (relTarget.indexOf('#') == 0)
+//                    {
+//                        $.post(url, {}, function(data)
+//                        {
+//                            // Google Analytics
+//                            // inner 같은 페이지에서 작은 부분 변경시
+//                            _gaq.push([ '_trackPageview', url ]);
+//                            $(relTarget).html(data);
+//                            $('html, body').animate({
+//                                scrollTop : 0
+//                            }, 333);
+//                            $('#baseLoading').fadeOut('slow');
+//                        });
+//
+//                        $.history.load(url, true);
+//
+//                        return false;
+//                    } else
+//                    {
+//                        $('#baseLoading').fadeOut('slow');
+//                        // #이 안붙은것에 대한 처리를 고민하자.
+//                    }
+//                } else
+//                {
+//                    $('#baseLoading').fadeOut('slow');
+//                    // rel이 없는것은 단순 자바스크립트다. 원하는걸 실행해주면 됨
+//                }
+//            }
+//            // url이 없는것은 단순 자바스크립트다. 원하는걸 실행해주면 됨
+//        });
+
+
+
+
 
     })(window);
 

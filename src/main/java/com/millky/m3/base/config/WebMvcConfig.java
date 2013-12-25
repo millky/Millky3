@@ -93,6 +93,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
         registry.addViewController("/base/global/footer").setViewName("web/base/globalFooter");
         registry.addViewController("/base/global/navigation").setViewName("web/base/globalNavigationBar");
         registry.addViewController("/t1").setViewName("hello");
+        registry.addViewController("/tc").setViewName("helloc");
         registry.addViewController("/t2").setViewName("hello2");
         registry.addViewController("/t3").setViewName("hello3");
         registry.addViewController("/t4").setViewName("hello4");
