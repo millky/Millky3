@@ -141,15 +141,24 @@
 
 <script>
 
-    (function(window){
+    if ("pushState" in history) {
+
+//    (function(window){
     $(window).on("popstate", function(e) {
         //handlePopstate(e);
         //console.log('popstate fired!'+e);
         alert("5"+ e.state+document.location.pathname);
 //        var path = window.location.href.replace(window.location.origin,"");
-        $('#content').load(document.location.pathname);
+
+        var path = document.location.pathname;
+        if(path == "/"){
+path = "/default/t1";
+        }
+        alert(path);
+        $('#content').load(path);
     });
-    })(window);
+    }
+//    })(window);
 
 //        history.Adapter.bind(window, 'statechange', function () {
 //            var State = history.getState();
@@ -158,7 +167,7 @@
     if ("pushState" in history) {
         $('a').click(function (evt) {
 
-            var url = $(this).attr('href');
+           var url = $(this).attr('href');
 
             alert("3"+this.href);
 

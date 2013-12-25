@@ -36,8 +36,8 @@ public class WebAppInitializer implements WebApplicationInitializer {
         appDispatcherServlet.setAsyncSupported(true);
 
         Set<String> mappingConflicts = appDispatcherServlet.addMapping("/");
-        if (!mappingConflicts.isEmpty()) {
-            throw new IllegalStateException("'millkyServlet' cannot be mapped to '/'");
-        }
+//        if (!mappingConflicts.isEmpty()) {
+//            throw new IllegalStateException("'millkyServlet' cannot be mapped to '/'");
+//        }
     }
 }
