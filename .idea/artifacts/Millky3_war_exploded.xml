@@ -19,6 +19,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
           <element id="library" level="project" name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.2" />
+          <element id="library" level="project" name="Maven: javax.websocket:javax.websocket-api:1.0" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.0.13" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.0.13" />
@@ -126,7 +127,6 @@
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.12" />
           <element id="library" level="project" name="Maven: commons-logging:commons-logging-api:1.1" />
           <element id="library" level="project" name="Maven: com.google.collections:google-collections:1.0" />
-          <element id="file-copy" path="$APPLICATION_HOME_DIR$/lib/groovy-all-2.0.6.jar" />
         </element>
       </element>
     </root>
