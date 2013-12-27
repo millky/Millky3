@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9cd155b-8c8e-4b0f-9d8c-bb73f0a7bba1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/RESOURCES/a.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/core/jspf/include.jspf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jslint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/paging.tag" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pagingRestful.tag" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pagingRestful2.tag" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/tagLibrary.tld" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.html" afterPath="" />
+    <list default="true" id="c9cd155b-8c8e-4b0f-9d8c-bb73f0a7bba1" name="Default" comment="결국...&#10;web.xml을 넣었다.&#10;일단...&#10;&#10;tomcat8에서는 지원할줄 알았는데 ㅠ&#10;javaconfig로는 방법이 없나요?">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/RESOURCES/a.swf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebAppInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebAppInitializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebMvcConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebMvcConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/helloc.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/helloc.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/default/t1.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/default/t1.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Millky3.iws" />
@@ -80,30 +76,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="HelloControllerTest.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/millky/m3/controller/HelloControllerTest.java">
+          <file leaf-file-name="hello2.jsp" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello2.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="0" selection-start="1442" selection-end="1450" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-                  <folding>
-                    <element signature="imports" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="hello.jsp" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="68" column="53" selection-start="2565" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="4455">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="basePage.jsp" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="1290">
+                <state line="79" column="36" selection-start="2788" selection-end="2788" vertical-scroll-proportion="-49.375" vertical-offset="0" max-vertical-offset="3060">
                   <folding />
                 </state>
               </provider>
@@ -118,19 +94,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HelloController.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/millky/m3/controller/web/HelloController.java">
+          <file leaf-file-name="paging.tag" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/paging.tag">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="24" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+                <state line="17" column="42" selection-start="828" selection-end="828" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1170">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="WebAppInitializer.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebAppInitializer.java">
+          <file leaf-file-name="pagingRestful.tag" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pagingRestful.tag">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="9" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="1170">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="705">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pagingRestful2.tag" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pagingRestful2.tag">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1365">
                   <folding />
                 </state>
               </provider>
@@ -139,7 +124,25 @@
           <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.42307693" vertical-offset="0" max-vertical-offset="780">
+                <state line="6" column="27" selection-start="282" selection-end="300" vertical-scroll-proportion="0.1294964" vertical-offset="0" max-vertical-offset="695">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hello3.jsp" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello3.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hello4.jsp" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello4.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
                   <folding />
                 </state>
               </provider>
@@ -148,7 +151,7 @@
           <file leaf-file-name="helloc.jsp" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/helloc.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="87" column="0" selection-start="3078" selection-end="3078" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="1725">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1710">
                   <folding />
                 </state>
               </provider>
@@ -161,16 +164,25 @@
           <file leaf-file-name="helloc.jsp" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/helloc.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="21" selection-start="1317" selection-end="1496" vertical-scroll-proportion="-5.625" vertical-offset="465" max-vertical-offset="1725">
+                <state line="39" column="21" selection-start="1251" selection-end="1430" vertical-scroll-proportion="-5.625" vertical-offset="450" max-vertical-offset="1710">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="WebMvcConfig.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="WebMvcConfig.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebMvcConfig.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="95" column="64" selection-start="4499" selection-end="4499" vertical-scroll-proportion="0.5180573" vertical-offset="619" max-vertical-offset="1710">
+                <state line="94" column="10" selection-start="4379" selection-end="4379" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="basePage.jsp" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="33" column="24" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.7132565" vertical-offset="0" max-vertical-offset="1155">
                   <folding />
                 </state>
               </provider>
@@ -213,13 +225,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello4jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/helloc.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/millky/m3/controller/web/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/core/jspf/include.jspf" />
-        <option value="$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebAppInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/core/jspf/include.jspf" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/default/t1.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/helloc.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebAppInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.jsp" />
       </list>
     </option>
   </component>
@@ -252,27 +265,36 @@
             <id>Android Lint</id>
           </State>
           <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Declaration redundancy</id>
+          </State>
+          <State>
+            <id>Error handling</id>
+          </State>
+          <State>
             <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>Hibernate Issues</id>
-          </State>
-          <State>
-            <id>JPA issues</id>
           </State>
           <State>
             <id>JavaScript</id>
           </State>
           <State>
-            <id>Probable bugs</id>
+            <id>Manifest</id>
           </State>
           <State>
-            <id>SQL</id>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>JSJQueryEfficiency</id>
+            <id>JSUnresolvedLibraryURL</id>
           </State>
         </selected-state>
       </profile-state>
@@ -440,7 +462,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Millky3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Millky3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Millky3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Millky3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -753,7 +839,7 @@
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
-    <property name="options.lastSelected" value="Errors" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -1112,7 +1198,7 @@
       <workItem from="1387906291700" duration="13575000" />
       <workItem from="1388114472541" duration="1111000" />
       <workItem from="1388136382486" duration="771000" />
-      <workItem from="1388147739885" duration="1221000" />
+      <workItem from="1388147739885" duration="2077000" />
     </task>
     <task id="LOCAL-00001" summary="test post">
       <created>1387490368403</created>
@@ -1146,11 +1232,15 @@
       <created>1387949878256</created>
       <updated>1387949878256</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/jsLibraryMappings.xml&#10;&#9;.idea/workspace.xml&#10;">
+      <created>1388149593740</created>
+      <updated>1388149593740</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32592000" />
+    <option name="totallyTimeSpent" value="33448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1167,8 +1257,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35067874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26890308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25309736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26890308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25309736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1176,7 +1266,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283186" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1236,36 +1326,14 @@
     <MESSAGE value="test post&#10;" />
     <MESSAGE value="move package." />
     <MESSAGE value="make package&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="make package&#10;" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/jsLibraryMappings.xml&#10;&#9;.idea/workspace.xml&#10;" />
+    <MESSAGE value="결국...&#10;web.xml을 넣었다.&#10;일단...&#10;&#10;tomcat8에서는 지원할줄 알았는데 ㅠ&#10;javaconfig로는 방법이 없나요?" />
+    <option name="LAST_COMMIT_MESSAGE" value="결국...&#10;web.xml을 넣었다.&#10;일단...&#10;&#10;tomcat8에서는 지원할줄 알았는데 ㅠ&#10;javaconfig로는 방법이 없나요?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17235" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../tomcat/apache-tomcat-8.0.0-RC5/lib/servlet-api.jar!/META-INF/NOTICE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965" />
@@ -1465,62 +1533,12 @@
         <state line="1" column="0" selection-start="0" selection-end="32" vertical-scroll-proportion="0.019556714" vertical-offset="0" max-vertical-offset="767" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello4.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="36" selection-start="2788" selection-end="2788" vertical-scroll-proportion="0.06310014" vertical-offset="1139" max-vertical-offset="3060" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="53" selection-start="2565" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="4455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/helloc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="3078" selection-end="3078" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="1725">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/millky/m3/controller/HelloControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1442" selection-end="1450" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="9" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="1290">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/core/jspf/include.jspf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="387" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="876">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1531,16 +1549,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/default/t1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="64" selection-end="64" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="53" selection-start="2565" selection-end="2608" vertical-scroll-proportion="1.3492063" vertical-offset="0" max-vertical-offset="4455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="36" selection-start="2788" selection-end="2788" vertical-scroll-proportion="-49.375" vertical-offset="0" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello4.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/helloc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/core/jspf/include.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="387" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pagingRestful.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/pagingRestful2.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/paging.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="42" selection-start="828" selection-end="828" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="76" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.61538464" vertical-offset="0" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/millky/m3/base/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="64" selection-start="4499" selection-end="4499" vertical-scroll-proportion="0.5180573" vertical-offset="619" max-vertical-offset="1710">
+        <state line="94" column="10" selection-start="4379" selection-end="4379" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/basePage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="24" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.7132565" vertical-offset="0" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="801" selection-end="801" vertical-scroll-proportion="0.42307693" vertical-offset="0" max-vertical-offset="780">
+        <state line="6" column="27" selection-start="282" selection-end="300" vertical-scroll-proportion="0.1294964" vertical-offset="0" max-vertical-offset="695">
           <folding />
         </state>
       </provider>

@@ -1,12 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: dklee
-  Date: 2013. 12. 25.
-  Time: 오후 3:01
-  To change this template use File | Settings | File Templates.
-
---%>
-
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,16 +1,11 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: olivia
-  Date: 2013. 12. 26.
-  Time: 오전 12:35
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title></title>
 </head>
 <body>
+<c:if test="true">true</c:if>
+<c:if test="false">false</c:if>
 t1
 </body>
 </html>

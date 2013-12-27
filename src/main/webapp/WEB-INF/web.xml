@@ -4,19 +4,10 @@
          version="3.1">
 
     <jsp-config>
-        <!--
-        <jsp-property-group>
-            <url-pattern>/*</url-pattern>
-             <page-encoding>UTF-8</page-encoding>
-        </jsp-property-group>
-        -->
         <jsp-property-group>
             <url-pattern>*.jsp</url-pattern>
             <page-encoding>UTF-8</page-encoding>
             <include-prelude>/WEB-INF/pages/core/jspf/include.jspf</include-prelude>
-            <!--
-            <include-coda>/coda.jspf</include-coda>
-            -->
         </jsp-property-group>
     </jsp-config>
 </web-app>
