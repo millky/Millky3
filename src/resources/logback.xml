@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <!-- To enable JMX Management -->
+    <jmxConfigurator />
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- <pattern>%-5level %logger{0} - %msg%n</pattern> -->
+            <pattern>%-19(%d{MM-dd HH:mm:ss.SSS}) %-5level %-55(%logger{35}.%M:%L)]#[ %msg ]%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%-20(%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread]) %-5level %-100(%logger{80}.%M:%L) # %msg%n</pattern>
+        </layout>
+    </appender>
+
+    <!--<logger name="org.hibernate" level="debug"/> -->
+    <!-- Uncomment and add your logger here: <logger name="org.springframework.samples.service.service" level="debug"/> -->
+
+    <logger name="org.hibernate" level="debug" />
+    <logger name="org.hibernate.SQL" level="DEBUG" />
+    <logger name="org.hibernate.type" level="TRACE" />
+    <logger name="com.millky" level="debug" />
+    <root level="debug">
+        <appender-ref ref="console" />
+    </root>
+    <root level="debug">
+        <appender-ref ref="file" />
+    </root>
+</configuration>
+
+
+
+
