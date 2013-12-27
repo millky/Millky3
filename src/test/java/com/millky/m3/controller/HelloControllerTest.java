@@ -39,13 +39,13 @@ public class HelloControllerTest {
     public void testPrintWelcome() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("hello"));
+                .andExpect(view().name("basePage"));
     }
 
     @Test
     public void testPrintWelcomePost() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("hello"));
+                .andExpect(view().name("basePage"));
     }
 }
