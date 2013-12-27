@@ -35,6 +35,8 @@ public class WebAppInitializer implements WebApplicationInitializer {
         servletContext.setInitParameter("spring.profiles.default", "simple");
         servletContext.setInitParameter("enablePooling", "false");
 
+       // servletContext.getRequestDispatcher().include();
+
         context.register(WebMvcConfig.class);
 
         ServletRegistration.Dynamic appDispatcherServlet = servletContext.addServlet("millkyServlet", new DispatcherServlet(context));

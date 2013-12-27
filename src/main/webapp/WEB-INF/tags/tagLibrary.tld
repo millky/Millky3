@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd" version="2.1">
+	<tlib-version>2.1</tlib-version>
+	<short-name>simpleTags</short-name>
+	<uri>http://millky.com/taglib/millkytag</uri>
+	<tag>
+		<name>subString</name>
+		<tag-class>com.millky.m2.base.utility.taglib.SubStringTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>begin</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>size</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>escapeXml</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tail</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>formatDate</name>
+		<tag-class>com.millky.m2.base.utility.taglib.FormatDateTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>locale</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>language</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>pattern</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+	<function>
+		<name>rollIt</name>
+		<function-class>com.millky.m2.base.utility.taglib.ElFunctions</function-class>
+		<function-signature>int rollDice()</function-signature>
+	</function>
+
+	<function>
+		<name>randomValue</name>
+		<function-class>com.millky.m2.base.utility.taglib.ElFunctions</function-class>
+		<function-signature>int randomValue()</function-signature>
+	</function>
+
+	<function>
+		<name>doFilter</name>
+		<function-class>com.millky.m2.base.utility.taglib.XssFilter</function-class>
+		<function-signature>String doFilter(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>escapeXml</name>
+		<function-class>com.millky.m2.base.utility.taglib.ElFunctions</function-class>
+		<function-signature>String escapeXml(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>makeParameter</name>
+		<function-class>com.millky.m2.base.utility.taglib.ElFunctions</function-class>
+		<function-signature>String makeParameter(javax.servlet.http.HttpServletRequest)</function-signature>
+	</function>
+
+	<function>
+		<name>addParameter</name>
+		<function-class>com.millky.m2.base.utility.taglib.ElFunctions</function-class>
+		<function-signature>String addParameter(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>removeParameter</name>
+		<function-class>com.millky.m2.base.utility.taglib.ElFunctions</function-class>
+		<function-signature>String removeParameter(javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>makePageParameter</name>
+		<function-class>com.millky.m2.base.utility.taglib.ElFunctions</function-class>
+		<function-signature>String makePageParameter(javax.servlet.http.HttpServletRequest)</function-signature>
+	</function>
+
+	<function>
+		<name>urlToLinkTag</name>
+		<function-class>com.millky.m2.base.utility.taglib.ElFunctions</function-class>
+		<function-signature>String urlToLinkTag(java.lang.String)</function-signature>
+	</function>
+
+</taglib>
+
+
